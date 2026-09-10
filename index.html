@@ -25,7 +25,7 @@
       var(--bg);
     color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-    line-height:1.8;
+    line-height:1.85;
   }
   .wrap{max-width:760px;margin:0 auto;padding:28px 16px 60px}
   .paper{
@@ -52,12 +52,13 @@
   .section-title{font-size:13px;letter-spacing:.16em;color:var(--muted);margin-bottom:10px;text-transform:uppercase}
   .letter{font-family:Georgia,"Times New Roman","Songti SC",serif;font-size:18px}
   .letter p{margin:0 0 15px}
-  .highlight{font-size:25px;line-height:1.5;margin:28px 0;text-align:center;color:var(--accent);font-weight:700}
-  .report-note{border-left:3px solid var(--accent2);padding:10px 0 10px 16px;margin:10px 0 0;color:#4f554f}
+  .poem{margin:24px 0;padding:18px 16px;border:1px dashed var(--line);border-radius:14px;text-align:center;color:#5d544c;background:#fbf7f0}
+  .poem .line{font-size:20px;font-weight:700;margin-bottom:4px}
+  .poem .from{font-size:13px;color:var(--muted)}
+  .highlight{font-size:24px;line-height:1.5;margin:28px 0;text-align:center;color:var(--accent);font-weight:700}
+  .report-note{border-left:3px solid var(--accent2);padding:10px 0 10px 16px;margin:12px 0 0;color:#4f554f}
   .signature{text-align:right;margin-top:28px;font-size:15px;color:var(--muted)}
   .footer{text-align:center;margin-top:18px;color:var(--muted);font-size:12px}
-  .heart{display:inline-block;animation:beat 1.8s infinite}
-  @keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
   @media (min-width:650px){.grid{grid-template-columns:1fr 1fr}.paper{padding:42px 46px}}
 </style>
 </head>
@@ -69,65 +70,68 @@
     <h1>孙老师学生售后回访报告</h1>
     <div class="sub">2026 · 教师节特别版</div>
 
-    <div class="stamp">状态：仍在健康成长中 ✓</div>
+    <div class="stamp">状态：没长歪，还挺精神 ✓</div>
 
     <div class="intro">
-      尊敬的孙老师：<br><br>
-      您于本科期间培养的学生一名，现进行第不知道多少年的不定期售后回访。
-      最近虽然忙到有点失联，但系统自检结果显示：一切正常，老师也一直记得。
+      孙老师：<br><br>
+      教师节到了，想了半天，觉得只发一句“教师节快乐”多少有点敷衍，
+      所以干脆来交个作业——汇报一下这个毕业生这两年的近况。
     </div>
 
     <div class="grid">
       <div class="card">
-        <h2>📍 当前坐标</h2>
+        <h2>📍 目前在哪</h2>
         <div class="big">悉尼</div>
-        <div class="tiny">还在读书，也还在折腾各种奇奇怪怪但自己很喜欢的事情。</div>
+        <div class="tiny">人跑到澳洲了，日子过得挺满。上课、做作业、折腾自己喜欢的事，基本没闲着。</div>
       </div>
 
       <div class="card">
-        <h2>📚 学业进度</h2>
-        <div class="big">跨专业闯关中</div>
-        <div class="tiny">本科毕业以后跑来读计算机了。跨度确实有点离谱，不过目前还没被代码打败。</div>
+        <h2>📚 最近在干嘛</h2>
+        <div class="big">改行学计算机</div>
+        <div class="tiny">对，就是从编导一路拐到了代码。听起来很突然，我自己现在看也觉得挺神奇。</div>
       </div>
 
       <div class="card">
-        <h2>💼 近期解锁的小成就</h2>
-        <div class="big">上月 ¥50,000</div>
-        <div class="tiny">第一次靠自己喜欢、也擅长的事情做到这个数字。想来想去，还是挺想跟您汇报一下的。</div>
+        <h2>💼 顺便报个喜</h2>
+        <div class="big">上个月赚了 5 万</div>
+        <div class="tiny">这事我自己还挺高兴的。不是突然发财，就是发现自己喜欢做的事，居然真的能一点点做成。</div>
       </div>
 
       <div class="card">
-        <h2>🧠 当前精神状态</h2>
-        <div class="big">忙，但开心</div>
-        <div class="tiny">有很多想做的事情，也还在一点点把自己的人生往喜欢的方向推。</div>
+        <h2>🌿 总体情况</h2>
+        <div class="big">忙得团团转</div>
+        <div class="tiny">但总体是开心的。想做的事很多，也还愿意折腾，说明状态应该还不错。</div>
       </div>
     </div>
 
     <div class="divider"></div>
 
-    <div class="section-title">给孙老师的话</div>
+    <div class="section-title">教师节限定 · 认真两分钟</div>
     <div class="letter">
-      <p>孙老师，教师节快乐。</p>
+      <p>最近确实联系少了，不是没想起来您，纯粹是日子过得太快。偶尔想到本科那几年，还是会想到您，也会想，不知道您最近过得怎么样。</p>
 
-      <p>最近一直忙忙叨叨的，所以和您联系得少了，但其实我一直都有惦记您。</p>
+      <p>这几年您经历了不少事，所以我今年不太想说那些特别标准的祝福。比起“工作顺利”“桃李满天下”，我更希望您自己的生活能顺一点、松一点，少碰见点烦心事，多遇见点值得高兴的事。</p>
 
-      <p>这几年您也经历了很多，所以今年比起那些“桃李满天下、工作顺利”的标准答案，我其实更想祝您：以后自己的生活，多一点开心，少一点糟心。</p>
+      <div class="poem">
+        <div class="line">“随风潜入夜，润物细无声。”</div>
+        <div class="from">—— 杜甫《春夜喜雨》</div>
+      </div>
 
-      <div class="highlight">希望生活以后，<br>对您温柔一点。</div>
+      <p>以前读这种句子的时候，总觉得是在写春雨。现在回头看，觉得拿来形容老师也挺合适的。很多影响，当时其实没什么感觉，过几年才发现，原来一直都在。</p>
 
-      <p>希望您身体健康，想做的事情都能慢慢做到，也希望以后有越来越多真正属于自己的、轻松又开心的日子。</p>
+      <p>所以也想趁今天认真跟您说一声：谢谢您以前教过我，也谢谢您在我本科那几年里留下的那些东西。</p>
 
-      <div class="report-note">至于您以前教过的这个学生——现在过得挺好的，也还在很努力地长大。所以这一项，您可以放心。</div>
+      <div class="report-note">还有就是，您以前带过的这个学生，现在过得挺好的。会赚钱了，会照顾自己了，也还在学新东西。虽然偶尔还是毛毛躁躁，但总体没给您丢人，哈哈。</div>
 
-      <div class="highlight" style="font-size:21px">您当年教过的那个学生，<br>现在过得很好。<span class="heart">❤️</span></div>
+      <div class="highlight">愿您往后的日子，<br>有花、有闲、有好心情。</div>
 
-      <p>再次祝孙老师教师节快乐。</p>
+      <p>孙老师，教师节快乐。也祝您以后不只是“做一个好老师”，更是舒舒服服地做自己。</p>
 
-      <div class="signature">—— 一个最近有点失联、但没有忘记您的学生</div>
+      <div class="signature">—— 您一个最近有点忙，但一直记得您的学生</div>
     </div>
   </section>
 
-  <div class="footer">Made with a little bit of nonsense & a lot of sincerity.</div>
+  <div class="footer">教师节快乐 · 2026.09.10</div>
 </div>
 </body>
 </html>
